@@ -163,38 +163,7 @@
       </div>
     </main>
 
-    <!-- 页脚 -->
-    <footer class="order-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-links">
-            <a href="#" class="footer-link">乐之药用户协议</a> |
-            <a href="#" class="footer-link">乐之药隐私政策</a> |
-            <a href="#" class="footer-link">增值电信业务经营许可证粤B2-20191109</a> |
-            <a href="#" class="footer-link">营业执照</a> |
-            <a href="#" class="footer-link">互联网药品信息服务资格证书编号:(粤)-经营性-2021-0044</a> |
-            <a href="#" class="footer-link">信息系统安全等级保护备案证明</a>
-          </div>
-          <div class="footer-links">
-            <a href="#" class="footer-link">(粤)网械平台备字【2018】第00001号</a> |
-            <a href="#" class="footer-link">粤ICP备12050502</a> |
-            <a href="#" class="footer-link">网络食品交易第三方平台备案凭证GDWS10044</a> |
-            <a href="#" class="footer-link">药品网络交易第三方平台备案证:(粤)网平平台备字(2023)0001-001号</a> |
-            <a href="#" class="footer-link">产品质量安全公告</a>
-          </div>
-          <div class="footer-links">
-            <a href="#" class="footer-link">网信算备440105932013102230029号</a> |
-            <a href="#" class="footer-link">网信算备440105932013102230011号</a>
-          </div>
-          <div class="footer-contact">
-            <a href="#" class="footer-link">客服热线: 4001180958</a> |
-            <a href="#" class="footer-link">乐之药知识产权管理平台</a> |
-            <a href="#" class="footer-link">质量投诉线: 4001288221</a> |
-            <span class="copyright">Copyright@2015-2024 乐之药版权所有</span>
-          </div>
-        </div>
-      </div>
-    </footer>
+
   </div>
 </template>
 

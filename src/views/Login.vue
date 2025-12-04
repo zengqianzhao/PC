@@ -1,25 +1,34 @@
 <template>
   <div class="ypsb-login-container">
-    <!-- 头部区域 -->
-    <header class="ypsb-header">
-      <div class="ypsb-logo">
-        <img src="../assets/logo.png" alt="乐之药" class="ypsb-logo-image">
-        <span class="ypsb-logo-text">乐之药</span>
-      </div>
-      <div class="ypsb-header-right">
-          <span class="ypsb-header-text">免费注册</span>
-          <span class="ypsb-header-text">忘记密码</span>
-          <img src="https://via.placeholder.com/50x50" alt="二维码" class="ypsb-qrcode">
-          <span class="ypsb-header-text">扫码下载乐之药App</span>
+    <!-- 页面右上角二维码区域 -->
+    <div class="top-right-qrcode">
+      <div class="qrcode-content">
+        <div class="qrcode-text">
+          <div class="qrcode-title">关注乐之药微信</div>
+          <div class="qrcode-desc">更多优惠信息、消息通知及时获取</div>
         </div>
+        <div class="qrcode-img">
+          <!-- 二维码图片占位符 -->
+          <div class="qrcode-placeholder">二维码</div>
+        </div>
+      </div>
+    </div>
+    <!-- 登录页面头部 -->
+    <header class="login-header">
+      <div class="login-header-content">
+        <div class="login-logo">
+          <img src="@/assets/logo.png" alt="乐之药" class="logo-img">
+          <span class="logo-text">乐之药</span>
+        </div>
+      </div>
     </header>
-    
+
     <!-- 主要内容区域 -->
     <main class="ypsb-main">
       <!-- 左侧宣传区域 -->
       <div class="ypsb-promotion">
         <h1 class="ypsb-slogan">聚优质药企，供放心好药<br>—— 让采购决策更省心，让健康保障更有力</h1>
-        <!-- 药品展示已删除 -->
+    
       </div>
       
       <!-- 右侧登录表单 -->
@@ -103,52 +112,79 @@
           <!-- 扫码注册 -->
           <div v-else-if="activeTab === 'register'" class="ypsb-form-content">
             <div class="ypsb-qrcode-register">
-              <img src="https://via.placeholder.com/150x150" alt="注册二维码" class="ypsb-register-qrcode">
-              <p>扫码下载App注册账号</p>
+              <div class="qrcode-content">
+                <div class="qrcode-info">
+                  <div class="qrcode-title">关注乐之药微信</div>
+                  <div class="qrcode-desc">更多优惠信息、消息通知及时获取</div>
+                </div>
+                <div class="qrcode-img">
+                  <!-- 二维码图片 -->
+                  <img src="https://via.placeholder.com/100x100" alt="乐之药微信二维码" class="ypsb-register-qrcode">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
     
-    <!-- 页脚 -->
-    <footer class="order-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-links">
-            <a href="#" class="footer-link">乐之药用户协议</a> |
-            <a href="#" class="footer-link">乐之药隐私政策</a> |
-            <a href="#" class="footer-link">增值电信业务经营许可证粤B2-20191109</a> |
-            <a href="#" class="footer-link">营业执照</a> |
-            <a href="#" class="footer-link">互联网药品信息服务资格证书编号:(粤)-经营性-2021-0044</a> |
-            <a href="#" class="footer-link">信息系统安全等级保护备案证明</a>
-          </div>
-          <div class="footer-links">
-            <a href="#" class="footer-link">(粤)网械平台备字【2018】第00001号</a> |
-            <a href="#" class="footer-link">粤ICP备12050502</a> |
-            <a href="#" class="footer-link">网络食品交易第三方平台备案凭证GDWS10044</a> |
-            <a href="#" class="footer-link">药品网络交易第三方平台备案证:(粤)网平平台备字(2023)0001-001号</a> |
-            <a href="#" class="footer-link">产品质量安全公告</a>
-          </div>
-          <div class="footer-links">
-            <a href="#" class="footer-link">网信算备440105932013102230029号</a> |
-            <a href="#" class="footer-link">网信算备440105932013102230011号</a>
-          </div>
-          <div class="footer-contact">
-            <a href="#" class="footer-link">客服热线: 4001180958</a> |
-            <a href="#" class="footer-link">乐之药知识产权管理平台</a> |
-            <a href="#" class="footer-link">质量投诉线: 4001288221</a> |
-            <span class="copyright">Copyright@2015-2024 乐之药dian.lezhiyao.cn版权所有</span>
-          </div>
+    <!-- 流程引导条 -->
+    <div class="flow-guide">
+      <div class="flow-item">
+        <div class="flow-icon">
+          <span class="icon">📱</span>
+        </div>
+        <div class="flow-content">
+          <div class="flow-title">下载手机APP</div>
+          <div class="flow-desc">扫描二维码，下载新版手机端app</div>
+        </div>
+        <div class="flow-arrow">→</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-icon">
+          <span class="icon">👤</span>
+        </div>
+        <div class="flow-content">
+          <div class="flow-title">注册会员</div>
+          <div class="flow-desc">注册账号并加入店铺</div>
+        </div>
+        <div class="flow-arrow">→</div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-icon">
+          <span class="icon">📋</span>
+        </div>
+        <div class="flow-content">
+          <div class="flow-title">资质认证</div>
+          <div class="flow-desc">上传资质质，认证成功</div>
+        </div>
+        <div class="flow-arrow">→</div>
+      </div>
+      <div class="flow-item no-arrow">
+        <div class="flow-icon">
+          <span class="icon">🛒</span>
+        </div>
+        <div class="flow-content">
+          <div class="flow-title">采购下单</div>
+          <div class="flow-desc">挑选商品，在APP端完成下单购买</div>
         </div>
       </div>
-    </footer>
+    </div>
   </div>
+  <!-- 引用底部组件 -->
+  <Footer />
 </template>
 
 <script>
+// 导入底部组件
+import Footer from '@/components/Footer.vue'
+
 export default {
   name: 'YpsbLogin',
+  // 注册底部组件
+  components: {
+    Footer
+  },
   data() {
     return {
       activeTab: 'account',
@@ -232,6 +268,93 @@ export default {
   width: 100%;
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  position: relative;
+}
+
+/* 页面右上角二维码区域样式 */
+.top-right-qrcode {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.qrcode-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.qrcode-text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.qrcode-title {
+   font-size: 14px;
+   font-weight: bold;
+   margin-bottom: 4px;
+   font-size: 14px;
+   color: #666;
+}
+
+.qrcode-desc {
+  color: #666;
+  font-size: 12px;
+}
+
+.qrcode-img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.qrcode-placeholder {
+  font-size: 10px;
+  color: #999;
+}
+
+/* 登录页面头部样式 */
+.login-header {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.login-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1890ff;
+  font-family: 'Microsoft YaHei', sans-serif;
 }
 
 /* 头部样式 */
@@ -277,11 +400,68 @@ export default {
   border: 1px solid #eee;
 }
 
+/* 流程引导条样式 */
+.flow-guide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #ffffff;
+}
+
+.flow-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.flow-item.no-arrow {
+  flex: 1.2;
+}
+
+.flow-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.flow-icon .icon {
+  font-size: 20px;
+}
+
+.flow-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.flow-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+.flow-desc {
+  font-size: 12px;
+  color: #1890ff;
+}
+
+.flow-arrow {
+  font-size: 16px;
+  color: #cccccc;
+  margin: 0 10px;
+}
+
 /* 主要内容区域 */
 .ypsb-main {
   display: flex;
   background: linear-gradient(to right, #007bff 0%, #0056b3 100%);
-  min-height: calc(100vh - 230px);
+  min-height: calc(100vh - 150px);
   padding: 60px 100px;
   position: relative;
   overflow: hidden;
@@ -364,7 +544,7 @@ export default {
 }
 
 .ypsb-tab.active {
-  color: #ff6700;
+  color: #1890ff;
   font-weight: 600;
 }
 
@@ -375,7 +555,7 @@ export default {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #ff6700;
+  background-color: #1890ff;
 }
 
 /* 表单内容 */
@@ -396,7 +576,7 @@ export default {
 
 .ypsb-input:focus {
   outline: none;
-  border-color: #ff6700;
+  border-color: #1890ff;
 }
 
 /* 短信验证码区域 */
@@ -411,7 +591,7 @@ export default {
 
 .ypsb-send-code-btn {
   padding: 0 20px;
-  background-color: #ff6700;
+  background-color: #1890ff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -421,7 +601,7 @@ export default {
 }
 
 .ypsb-send-code-btn:hover:not(:disabled) {
-  background-color: #e55a00;
+  background-color: #666;
 }
 
 .ypsb-send-code-btn:disabled {
@@ -445,8 +625,61 @@ export default {
 }
 
 .ypsb-forgot-password {
-  color: #ff6700;
+  color: #1890ff;
   text-decoration: none;
+}
+
+/* 扫码注册区域样式 */
+.ypsb-qrcode-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.qrcode-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.qrcode-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.qrcode-title {
+  color: #666;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.qrcode-desc {
+  color: #6c757d;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.qrcode-img {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dee2e6;
+}
+
+.ypsb-register-qrcode {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
 }
 
 .ypsb-forgot-password:hover {
@@ -457,7 +690,7 @@ export default {
 .ypsb-login-btn {
   width: 100%;
   padding: 12px;
-  background-color: #ff6700;
+  background-color: #1890ff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -468,9 +701,9 @@ export default {
 }
 
 .ypsb-login-btn:hover {
-  background-color: #e55a00;
+  background-color: #40a9ff;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 103, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(24, 144, 255, 0.3);
 }
 
 /* 扫码注册 */

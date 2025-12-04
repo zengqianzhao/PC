@@ -1,103 +1,67 @@
 <template>
   <div class="brand-flagship-container">
-    <!-- 页面头部 -->
-    <header class="brand-header">
-      <div class="health-container">
-        <!-- 导航栏 -->
-        <nav class="brand-nav">
-          <div class="brand-nav-left">
-            <h1 class="brand-logo">
-              <img src="../assets/logo.png" alt="乐之药" class="brand-logo-img">
-              <span class="brand-logo-text">乐之药</span>
-            </h1>
+    <!-- 促销活动区域 -->
+    <div class="health-container">
+      <div class="brand-promotions">
+        <div class="brand-coupons">
+          <div class="brand-coupon">
+            <span class="brand-coupon-title">有优惠券</span>
           </div>
-          <div class="brand-nav-center">
-            <a href="/shop" class="brand-main-nav">商城首页</a>
-            <a href="#" class="brand-main-nav">在线下单</a>
-            <a href="/brand-flagship" class="brand-main-nav active">旗舰店</a>
-            <a href="#" class="brand-main-nav">首推单品包邮</a>
-            <a href="#" class="brand-main-nav">药速拼</a>
-            <a href="#" class="brand-main-nav">中药馆</a>
-            <a href="#" class="brand-main-nav">非药馆</a>
-            <a href="#" class="brand-main-nav">智能采购</a>
+          <div class="brand-coupon">
+            <span class="brand-coupon-title">支持货到付款</span>
           </div>
-          <div class="brand-nav-right">
-            <div class="brand-search">
-              <input type="text" v-model="searchKeyword" placeholder="搜索药品、品牌" class="brand-search-input">
-              <button class="brand-search-btn">
-                <span class="brand-search-icon">🔍</span>
-              </button>
-            </div>
-            <div class="brand-nav-links">
-              <a href="#" class="brand-nav-link" @click="toggleCart">
-                <span class="brand-nav-icon">🛒</span>
-                <span class="brand-cart-count">{{ cartCount }}</span>
-              </a>
-            </div>
+          <div class="brand-coupon">
+            <span class="brand-coupon-title">顺丰包邮</span>
           </div>
-        </nav>
+          <div class="brand-coupon">
+            <span class="brand-coupon-title">首单专享</span>
+          </div>
+          <div class="brand-coupon">
+            <span class="brand-coupon-title">康泽</span>
+          </div>
+          <div class="brand-coupon">
+            <span class="brand-coupon-title">齐乐</span>
+          </div>
+          <div class="brand-coupon">
+            <span class="brand-coupon-title">开鑫券</span>
+          </div>
+        </div>
         
-        <!-- 促销活动区域 -->
-        <div class="brand-promotions">
-          <div class="brand-coupons">
-            <div class="brand-coupon">
-              <span class="brand-coupon-title">有优惠券</span>
-            </div>
-            <div class="brand-coupon">
-              <span class="brand-coupon-title">支持货到付款</span>
-            </div>
-            <div class="brand-coupon">
-              <span class="brand-coupon-title">顺丰包邮</span>
-            </div>
-            <div class="brand-coupon">
-              <span class="brand-coupon-title">首单专享</span>
-            </div>
-            <div class="brand-coupon">
-              <span class="brand-coupon-title">康泽</span>
-            </div>
-            <div class="brand-coupon">
-              <span class="brand-coupon-title">齐乐</span>
-            </div>
-            <div class="brand-coupon">
-              <span class="brand-coupon-title">开鑫券</span>
+        <!-- 配送方式 -->
+        <div class="brand-delivery">
+          <div class="brand-delivery-item">
+            <span class="brand-delivery-title">起配金额</span>
+            <div class="brand-delivery-options">
+              <span class="brand-delivery-option">0-300</span>
+              <span class="brand-delivery-option">300-500</span>
+              <span class="brand-delivery-option">500-1000</span>
+              <span class="brand-delivery-option">1000以上</span>
             </div>
           </div>
-          
-          <!-- 配送方式 -->
-          <div class="brand-delivery">
-            <div class="brand-delivery-item">
-              <span class="brand-delivery-title">起配金额</span>
-              <div class="brand-delivery-options">
-                <span class="brand-delivery-option">0-300</span>
-                <span class="brand-delivery-option">300-500</span>
-                <span class="brand-delivery-option">500-1000</span>
-                <span class="brand-delivery-option">1000以上</span>
-              </div>
-            </div>
-            <div class="brand-delivery-item">
-              <span class="brand-delivery-title">经营类别</span>
-              <div class="brand-delivery-options">
-                <span class="brand-delivery-option">注射剂</span>
-                <span class="brand-delivery-option">西药</span>
-                <span class="brand-delivery-option">OTC药</span>
-                <span class="brand-delivery-option">处方药</span>
-                <span class="brand-delivery-option">中药饮片</span>
-                <span class="brand-delivery-option">中药饮片</span>
-                <span class="brand-delivery-option">中药饮片</span>
-                <span class="brand-delivery-option">中药饮片</span>
-                <span class="brand-delivery-option">中药饮片</span>
-              </div>
+          <div class="brand-delivery-item">
+            <span class="brand-delivery-title">经营类别</span>
+            <div class="brand-delivery-options">
+              <span class="brand-delivery-option">注射剂</span>
+              <span class="brand-delivery-option">西药</span>
+              <span class="brand-delivery-option">OTC药</span>
+              <span class="brand-delivery-option">处方药</span>
+              <span class="brand-delivery-option">中药饮片</span>
+              <span class="brand-delivery-option">中药饮片</span>
+              <span class="brand-delivery-option">中药饮片</span>
+              <span class="brand-delivery-option">中药饮片</span>
+              <span class="brand-delivery-option">中药饮片</span>
             </div>
           </div>
-          
-          <!-- 配送承诺 -->
-          <div class="brand-delivery-promises">
-            <div class="brand-promise-item">
-              <span class="brand-promise-icon">🚚</span>
-              <span class="brand-promise-text">今日特价</span>
-            </div>
-            <div class="brand-promise-item">
-              <span class="brand-promise-icon">⚡</span>
+        </div>
+        
+        <!-- 配送承诺 -->
+        <div class="brand-delivery-promises">
+          <div class="brand-promise-item">
+            <span class="brand-promise-icon">🚚</span>
+            <span class="brand-promise-text">今日特价</span>
+          </div>
+          <div class="brand-promise-item">
+            <span class="brand-promise-icon">⚡</span>
               <span class="brand-promise-text">药超惠推荐</span>
             </div>
             <div class="brand-promise-item">
@@ -111,7 +75,6 @@
           </div>
         </div>
       </div>
-    </header>
 
     <!-- 主要内容区域 -->
     <main class="brand-main">
@@ -158,16 +121,35 @@
                 <img :src="company.logo" :alt="company.name" class="brand-company-logo-img">
               </div>
               <div class="brand-company-info">
-                <h4 class="brand-company-name">{{ company.name }}</h4>
+                <div class="brand-company-header">
+                  <h4 class="brand-company-name">{{ company.name }}</h4>
+                  <span class="brand-company-rating">综合评分{{ company.rating }}</span>
+                </div>
                 <p class="brand-company-desc">{{ company.description }}</p>
                 <div class="brand-company-stats">
                   <span class="brand-company-stat">
-                    <span class="brand-stat-icon">📊</span>
-                    {{ company.productCount }}种药品
+                    <span class="brand-stat-icon">📦</span>
+                    {{ company.productCount }}种商品
                   </span>
                   <span class="brand-company-stat">
-                    <span class="brand-stat-icon">⭐</span>
-                    {{ company.rating }}分
+                    <span class="brand-stat-icon">💎</span>
+                    0元起配
+                  </span>
+                  <span class="brand-company-stat">
+                    <span class="brand-stat-icon">🚚</span>
+                    299元包邮
+                  </span>
+                  <span class="brand-company-stat">
+                    <span class="brand-stat-icon">📄</span>
+                    电子开户
+                  </span>
+                  <span class="brand-company-stat">
+                    <span class="brand-stat-icon">✈️</span>
+                    顺丰/京东
+                  </span>
+                  <span class="brand-company-stat">
+                    <span class="brand-stat-icon">🔍</span>
+                    进店看看
                   </span>
                 </div>
               </div>
@@ -183,33 +165,59 @@
             <h3 class="brand-section-title">热门产品推荐</h3>
             <a href="#" class="brand-view-more">查看全部</a>
           </div>
-          <div class="brand-products-grid">
-            <div 
-              v-for="product in popularProducts" 
-              :key="product.id"
-              class="brand-product-card"
-            >
-              <div class="brand-product-image-container">
-                <img :src="product.image" :alt="product.name" class="brand-product-image">
-                <div class="brand-product-badge" v-if="product.isNew">新品</div>
-                <div class="brand-product-badge hot" v-if="product.isHot">热销</div>
+          <!-- 排序选项 -->
+          <div class="brand-sort-options">
+            <div class="brand-sort-option active">综合排序</div>
+            <div class="brand-sort-option">按销量排序</div>
+            <div class="brand-sort-option">按评价从高到低</div>
+            <div class="brand-sort-option">按起配金额从低到高</div>
+          </div>
+          
+          <!-- 产品展示 -->
+          <div class="brand-products-display">
+            <!-- 药企信息 -->
+            <div class="brand-products-company" v-if="filteredCompanies.length > 0">
+              <div class="brand-products-company-info">
+                <img :src="filteredCompanies[0].logo" :alt="filteredCompanies[0].name" class="company-info-logo">
+                <div class="company-info-details">
+                  <h4 class="company-info-name">{{ filteredCompanies[0].name }}</h4>
+                  <p class="company-info-stats">{{ filteredCompanies[0].description }}</p>
+                  <div class="company-info-tags">
+                    <span class="company-tag">0元起配</span>
+                    <span class="company-tag">299元包邮</span>
+                    <span class="company-tag">电子开户</span>
+                    <span class="company-tag">顺丰/京东</span>
+                    <span class="company-tag">药品</span>
+                  </div>
+                </div>
               </div>
-              <div class="brand-product-info">
-                <h4 class="brand-product-name">{{ product.name }}</h4>
-                <p class="brand-product-spec">{{ product.spec }}</p>
-                <div class="brand-product-brand">
-                  <img :src="getBrandLogo(product.manufacturer)" :alt="product.manufacturer" class="brand-product-brand-logo">
-                  <span class="brand-product-brand-name">{{ product.manufacturer }}</span>
+            </div>
+            
+            <!-- 产品列表 -->
+            <div class="brand-products-grid">
+              <div 
+                v-for="product in popularProducts" 
+                :key="product.id"
+                class="brand-product-card"
+              >
+                <div class="brand-product-image-container">
+                  <img :src="product.image" :alt="product.name" class="brand-product-image">
+                  <div class="brand-product-badge" v-if="product.isNew">新品</div>
+                  <div class="brand-product-badge hot" v-if="product.isHot">热销</div>
                 </div>
-                <div class="brand-product-price">
-                  <span class="brand-product-current-price">¥{{ product.price.toFixed(2) }}</span>
-                  <span class="brand-product-original-price" v-if="product.originalPrice">¥{{ product.originalPrice.toFixed(2) }}</span>
-                </div>
-                <div class="brand-product-action">
-                  <button class="brand-add-to-cart" @click.stop="addToCart(product)">
-                    <span class="brand-add-to-cart-icon">➕</span>
-                    加入购物车
-                  </button>
+                <div class="brand-product-info">
+                  <h4 class="brand-product-name">{{ product.name }}</h4>
+                  <p class="brand-product-spec">{{ product.spec }}</p>
+                  <div class="brand-product-price">
+                    <span class="brand-product-current-price">¥{{ product.price.toFixed(2) }}</span>
+                    <span class="brand-product-original-price" v-if="product.originalPrice">原价¥{{ product.originalPrice.toFixed(2) }}</span>
+                  </div>
+                  <div class="brand-product-action">
+                    <button class="brand-add-to-cart" @click.stop="addToCart(product)">
+                      <span class="brand-add-to-cart-icon">➕</span>
+                      加入购物车
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,27 +226,7 @@
       </section>
     </main>
 
-    <!-- 页脚 -->
-    <footer class="order-footer">
-      <div class="health-container">
-        <div class="footer-content">
-          <div class="footer-links">
-            <a href="#" class="footer-link">关于我们</a>
-            <a href="#" class="footer-link">联系我们</a>
-            <a href="#" class="footer-link">用户协议</a>
-            <a href="#" class="footer-link">隐私政策</a>
-            <a href="#" class="footer-link">帮助中心</a>
-          </div>
-          <div class="footer-contact">
-            <p>客服热线：400-123-4567</p>
-            <p>知识产权管理平台：dian.lezhiyao.cn</p>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>Copyright@2015-2024 乐之药dian.lezhiyao.cn版权所有</p>
-        </div>
-      </div>
-    </footer>
+
 
     <!-- 购物车侧边栏 -->
     <div class="health-cart-sidebar" :class="{ 'open': isCartOpen }">
@@ -309,21 +297,21 @@ export default {
       companies: [
         {
           id: 1,
-          name: '华北制药',
-          logo: 'https://via.placeholder.com/120x80?text=华北制药',
-          description: '中国最大的化学制药企业之一，专注于抗生素、维生素等领域',
-          productCount: 200,
-          rating: 4.8,
+          name: '集药采',
+          logo: 'https://via.placeholder.com/120x80?text=集药采',
+          description: '上海140种 发货2289.7万件 评价19.8万条',
+          productCount: 140,
+          rating: 9.9,
           category: 1
         },
         {
           id: 2,
-          name: '石药集团',
-          logo: 'https://via.placeholder.com/120x80?text=石药集团',
-          description: '国内领先的创新型医药企业，专注于创新药研发',
-          productCount: 180,
-          rating: 4.9,
-          category: 1
+          name: '药中堂旗舰店',
+          logo: 'https://via.placeholder.com/120x80?text=药中堂',
+          description: '上架3.3万种 发货60.2万件 评价159.8万条',
+          productCount: 33000,
+          rating: 9.9,
+          category: 2
         },
         {
           id: 3,
@@ -363,74 +351,74 @@ export default {
         }
       ],
       // 热门产品数据
-      popularProducts: [
-        {
-          id: 1,
-          name: '阿莫西林胶囊',
-          spec: '0.25g*24粒/盒',
-          price: 12.5,
-          originalPrice: 15.0,
-          manufacturer: '华北制药',
-          image: 'https://via.placeholder.com/200x200?text=Medicine1',
-          isNew: false,
-          isHot: true
-        },
-        {
-          id: 2,
-          name: '复方板蓝根颗粒',
-          spec: '10g*20袋/盒',
-          price: 22.6,
-          originalPrice: 25.8,
-          manufacturer: '白云山',
-          image: 'https://via.placeholder.com/200x200?text=Medicine2',
-          isNew: false,
-          isHot: true
-        },
-        {
-          id: 3,
-          name: '布洛芬缓释胶囊',
-          spec: '0.3g*20粒/盒',
-          price: 18.9,
-          originalPrice: 22.5,
-          manufacturer: '哈药集团',
-          image: 'https://via.placeholder.com/200x200?text=Medicine3',
-          isNew: false,
-          isHot: true
-        },
-        {
-          id: 4,
-          name: '葡萄糖酸锌口服液',
-          spec: '10ml*12支/盒',
-          price: 32.8,
-          originalPrice: 38.0,
-          manufacturer: '三精制药',
-          image: 'https://via.placeholder.com/200x200?text=Medicine4',
-          isNew: true,
-          isHot: false
-        },
-        {
-          id: 5,
-          name: '注射用头孢曲松钠',
-          spec: '1.0g*10支/盒',
-          price: 85.0,
-          originalPrice: 98.0,
-          manufacturer: '石药集团',
-          image: 'https://via.placeholder.com/200x200?text=Medicine5',
-          isNew: false,
-          isHot: true
-        },
-        {
-          id: 6,
-          name: '电子血压计',
-          spec: '全自动上臂式',
-          price: 199.0,
-          originalPrice: 249.0,
-          manufacturer: '迈瑞医疗',
-          image: 'https://via.placeholder.com/200x200?text=Device1',
-          isNew: true,
-          isHot: true
-        }
-      ]
+    popularProducts: [
+      {
+        id: 1,
+        name: '白云山小柴胡颗粒10g*10袋/盒',
+        spec: '解表散热，疏肝和胃。用于寒热往来，胸胁苦满，心烦喜吐，口苦咽干。',
+        price: 16.30,
+        originalPrice: 19.90,
+        image: 'https://via.placeholder.com/200x200?text=白云山',
+        manufacturer: '白云山',
+        isNew: false,
+        isHot: true
+      },
+      {
+        id: 2,
+        name: '同仁堂金匮肾气丸360丸/瓶',
+        spec: '温补肾阳，化气行水。用于肾虚水肿，腰膝酸软，小便不利，畏寒肢冷。',
+        price: 17.65,
+        originalPrice: 22.50,
+        image: 'https://via.placeholder.com/200x200?text=同仁堂',
+        manufacturer: '同仁堂',
+        isNew: false,
+        isHot: true
+      },
+      {
+        id: 3,
+        name: '瑞舒伐他汀钙片5mg*28片/盒',
+        spec: '用于经饮食控制和其它非药物治疗仍不能适当控制血脂异常的原发性高胆固醇血症或混合型血脂异常症。',
+        price: 15.52,
+        originalPrice: 15.99,
+        image: 'https://via.placeholder.com/200x200?text=瑞舒伐他汀',
+        manufacturer: '阿斯利康',
+        isNew: false,
+        isHot: false
+      },
+      {
+        id: 4,
+        name: '孔圣家传胃舒宁片0.61g*36片/盒',
+        spec: '补气健脾，制酸止痛。用于脾胃气虚、肝胃不和所致的胃脘疼痛、喜温喜按、泛吐酸水。',
+        price: 59.00,
+        originalPrice: 69.00,
+        image: 'https://via.placeholder.com/200x200?text=胃舒宁片',
+        manufacturer: '孔圣家传',
+        isNew: false,
+        isHot: false
+      },
+      {
+        id: 5,
+        name: '云鹏诺氟沙星胶囊0.1g*50粒/盒',
+        spec: '适用于敏感菌所致的尿路感染、淋病、前列腺炎、肠道感染和伤寒及其他沙门菌感染。',
+        price: 4.35,
+        originalPrice: 5.50,
+        image: 'https://via.placeholder.com/200x200?text=诺氟沙星',
+        manufacturer: '云鹏制药',
+        isNew: false,
+        isHot: false
+      },
+      {
+        id: 6,
+        name: '克痢痧复方草豆蔻酊10ml*1瓶/盒',
+        spec: '芳香化浊，理气健胃。用于消化不良引起的腹泻，腹痛。',
+        price: 23.52,
+        originalPrice: 28.80,
+        image: 'https://via.placeholder.com/200x200?text=克痢痧',
+        manufacturer: '克痢痧',
+        isNew: false,
+        isHot: false
+      }
+    ]
     }
   },
   computed: {
@@ -902,53 +890,52 @@ export default {
 
 /* 品牌药企列表样式 */
 .brand-companies-section {
-  padding: 30px 0;
-  background: #fafafa;
+  padding: 20px 0;
+  background: #ffffff;
 }
 
 .brand-section-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #333;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   text-align: left;
-  padding-left: 5px;
+  padding-left: 10px;
   border-left: 3px solid #ff8800;
   position: relative;
 }
 
-.brand-section-title::after {
-  display: none;
-}
-
 .brand-companies-grid {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   overflow-x: auto;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .brand-company-card {
   background: #ffffff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  min-width: 220px;
-  border: 1px solid #f0f0f0;
+  min-width: 300px;
+  border: 1px solid #e0e0e0;
 }
 
 .brand-company-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .brand-company-logo {
   width: 100%;
-  height: 120px;
+  height: 80px;
   background: #f9f9f9;
   display: flex;
   align-items: center;
@@ -957,55 +944,73 @@ export default {
 }
 
 .brand-company-logo-img {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
 }
 
 .brand-company-info {
-  padding: 15px;
+  padding: 12px;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
+.brand-company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
 .brand-company-name {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: #333;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-company-rating {
+  font-size: 12px;
+  color: #ff8800;
+  font-weight: 600;
+  background: #fff8f0;
+  padding: 2px 6px;
+  border-radius: 10px;
 }
 
 .brand-company-desc {
-  font-size: 12px;
+  font-size: 11px;
   color: #666;
-  margin-bottom: 12px;
-  line-height: 1.4;
+  margin-bottom: 8px;
+  line-height: 1.3;
   flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
 }
 
 .brand-company-stats {
   display: flex;
-  gap: 15px;
-  padding-top: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 8px;
   border-top: 1px dashed #eee;
 }
 
 .brand-company-stat {
   display: flex;
   align-items: center;
-  gap: 4px;
-  font-size: 12px;
+  gap: 3px;
+  font-size: 11px;
   color: #999;
+  background: #fafafa;
+  padding: 3px 6px;
+  border-radius: 4px;
 }
 
 .brand-stat-icon {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* 热门产品推荐样式 */
@@ -1018,7 +1023,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -1036,31 +1041,118 @@ export default {
   text-decoration: underline;
 }
 
+/* 排序选项 */
+.brand-sort-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.brand-sort-option {
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.brand-sort-option:hover {
+  color: #ff8800;
+  background: #fff8f0;
+}
+
+.brand-sort-option.active {
+  color: #ff8800;
+  background: #fff8f0;
+  font-weight: 600;
+  border-bottom: 2px solid #ff8800;
+}
+
+/* 药企信息 */
+.brand-products-company {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.brand-products-company-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.company-info-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.company-info-details {
+  flex: 1;
+}
+
+.company-info-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.company-info-stats {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.company-info-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.company-tag {
+  font-size: 11px;
+  color: #666;
+  background: #ffffff;
+  padding: 3px 8px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+/* 产品网格 */
 .brand-products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
 }
 
 .brand-product-card {
   background: #ffffff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   position: relative;
   border: 1px solid #f0f0f0;
 }
 
 .brand-product-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .brand-product-image-container {
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 140px;
   background: #f9f9f9;
   display: flex;
   align-items: center;
@@ -1080,15 +1172,15 @@ export default {
 
 .brand-product-badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 8px;
+  left: 8px;
   background: #ff8800;
   color: #ffffff;
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 10px;
   font-weight: 600;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .brand-product-badge.hot {
@@ -1096,7 +1188,50 @@ export default {
 }
 
 .brand-product-info {
-  padding: 15px;
+  padding: 12px;
+}
+
+.brand-product-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.brand-product-spec {
+  font-size: 11px;
+  color: #999;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.brand-product-price {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
+.brand-product-current-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff0000;
+}
+
+.brand-product-original-price {
+  font-size: 11px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.brand-product-action {
+  margin-top: auto;
 }
 
 .brand-product-name {

@@ -1,78 +1,6 @@
 <template>
   <div class="health-shop-container">
-    <!-- 健康供应链顶部导航栏 -->
-    <header class="health-header">
-      <!-- 顶部导航栏 -->
-      <div class="health-topbar">
-        <div class="health-container">
-          <div class="health-topbar-content">
-            <div class="health-logo">
-              <img src="../assets/logo.png" alt="乐之药" class="health-logo-image">
-              <h1 class="health-logo-text">乐之药</h1>
-            </div>
-            <div class="health-topbar-nav">
-              <router-link to="/order" class="health-topbar-link">我的订单</router-link>
-              <a href="#" class="health-topbar-link">我的乐之药</a>
-              <a href="#" class="health-topbar-link">领券中心</a>
-              <a href="#" class="health-topbar-link">我的账单</a>
-              <a href="#" class="health-topbar-link">检验报告</a>
-              <a href="#" class="health-topbar-link">帮助中心</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 主要头部内容 -->
-      <div class="health-header-main">
-        <div class="health-container">
-          <!-- 搜索区域和集采清单 -->
-          <div class="health-search-container">
-            <!-- 搜索区域 -->
-            <div class="health-search">
-              <div class="health-search-wrapper">
-                <input type="text" v-model="searchKeyword" placeholder="搜索药品、医疗器械、中药材" class="health-search-input">
-                <button class="health-search-btn" @click="handleSearch">搜索</button>
-              </div>
-              <div class="health-search-suggestions">
-                <a href="#" class="health-search-suggestion">品牌药企</a>
-                <a href="#" class="health-search-suggestion">集采药品</a>
-                <a href="#" class="health-search-suggestion">中药材</a>
-                <a href="#" class="health-search-suggestion">医疗器械</a>
-                <a href="#" class="health-search-suggestion">AI集采规划</a>
-              </div>
-            </div>
-            
-            <!-- 集采清单 -->
-            <div class="health-cart-wrapper">
-              <div class="health-cart" @click="openCart">
-                <span class="health-cart-icon">🛒</span>
-                <span>集采清单</span>
-                <span class="health-cart-count">{{ cartCount }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 商品分类导航 -->
-      <div class="health-nav">
-        <div class="health-container">
-          <div class="health-nav-categories">
-            <a href="#" class="health-nav-category-all">全部商品分类</a>
-          </div>
-          
-          <nav class="health-nav-main">
-            <router-link to="/brand-flagship" class="health-nav-item">品牌药企旗舰</router-link>
-            <a href="#" class="health-nav-item">集采助手</a>
-            <a href="#" class="health-nav-item">集采包邮优选</a>
-            <a href="#" class="health-nav-item">集采拼单惠</a>
-            <a href="#" class="health-nav-item">中药集采专区</a>
-            <a href="#" class="health-nav-item">健康器械专区</a>
-            <a href="#" class="health-nav-item">AI集采规划师</a>
-          </nav>
-        </div>
-      </div>
-    </header>
+
 
     <!-- 主要内容区域 -->
     <main class="health-main">
@@ -235,38 +163,7 @@
     <!-- 遮罩层 -->
     <div v-if="isCartOpen" class="health-overlay" @click="closeCart"></div>
     
-    <!-- 页脚 -->
-    <footer class="order-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-links">
-            <a href="#" class="footer-link">乐之药用户协议</a> |
-            <a href="#" class="footer-link">乐之药隐私政策</a> |
-            <a href="#" class="footer-link">增值电信业务经营许可证粤B2-20191109</a> |
-            <a href="#" class="footer-link">营业执照</a> |
-            <a href="#" class="footer-link">互联网药品信息服务资格证书编号:(粤)-经营性-2021-0044</a> |
-            <a href="#" class="footer-link">信息系统安全等级保护备案证明</a>
-          </div>
-          <div class="footer-links">
-            <a href="#" class="footer-link">(粤)网械平台备字【2018】第00001号</a> |
-            <a href="#" class="footer-link">粤ICP备12050502</a> |
-            <a href="#" class="footer-link">网络食品交易第三方平台备案凭证GDWS10044</a> |
-            <a href="#" class="footer-link">药品网络交易第三方平台备案证:(粤)网平平台备字(2023)0001-001号</a> |
-            <a href="#" class="footer-link">产品质量安全公告</a>
-          </div>
-          <div class="footer-links">
-            <a href="#" class="footer-link">网信算备440105932013102230029号</a> |
-            <a href="#" class="footer-link">网信算备440105932013102230011号</a>
-          </div>
-          <div class="footer-contact">
-            <a href="#" class="footer-link">客服热线: 4001180958</a> |
-            <a href="#" class="footer-link">乐之药知识产权管理平台</a> |
-            <a href="#" class="footer-link">质量投诉线: 4001288221</a> |
-            <span class="copyright">Copyright@2015-2024 乐之药dian.lezhiyao.cn版权所有</span>
-          </div>
-        </div>
-      </div>
-    </footer>
+
   </div>
 </template>
 
