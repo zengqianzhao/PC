@@ -62,7 +62,7 @@
           </div>
           
           <nav class="health-nav-main">
-            <a href="#" class="health-nav-item">品牌药企旗舰</a>
+            <router-link to="/brand-flagship" class="health-nav-item">品牌药企旗舰</router-link>
             <a href="#" class="health-nav-item">集采助手</a>
             <a href="#" class="health-nav-item">集采包邮优选</a>
             <a href="#" class="health-nav-item">集采拼单惠</a>
@@ -105,10 +105,10 @@
                
         <!-- 快捷入口 -->
         <div class="health-quick-entry">
-          <div class="health-quick-entry-item">
+          <router-link to="/brand-flagship" class="health-quick-entry-item">
             <span class="health-quick-entry-icon">🏢</span>
             <span class="health-quick-entry-text">品牌药企旗舰</span>
-          </div>
+          </router-link>
           <div class="health-quick-entry-item">
             <span class="health-quick-entry-icon">📋</span>
             <span class="health-quick-entry-text">集采助手</span>

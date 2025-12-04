@@ -22,6 +22,16 @@ const routes = [
       keepAlive: true
     }
   },
+  // 品牌药企旗舰页面
+  {
+    path: '/brand-flagship',
+    name: 'BrandFlagship',
+    component: () => import('../views/BrandFlagship.vue'),
+    meta: {
+      title: '品牌药企旗舰 - 乐之药App',
+      keepAlive: true
+    }
+  },
   // 订单页面
   {
     path: '/order',
