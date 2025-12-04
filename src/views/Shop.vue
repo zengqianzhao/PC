@@ -262,7 +262,7 @@
             <a href="#" class="footer-link">客服热线: 4001180958</a> |
             <a href="#" class="footer-link">乐之药知识产权管理平台</a> |
             <a href="#" class="footer-link">质量投诉线: 4001288221</a> |
-            <span class="copyright">Copyright@2015-2024 乐之药dian.ysbang.cn版权所有</span>
+            <span class="copyright">Copyright@2015-2024 乐之药dian.lezhiyao.cn版权所有</span>
           </div>
         </div>
       </div>

@@ -7,8 +7,8 @@
         <nav class="brand-nav">
           <div class="brand-nav-left">
             <h1 class="brand-logo">
-              <img src="https://via.placeholder.com/80x40?text=Logo" alt="品牌药企旗舰" class="brand-logo-img">
-              <span class="brand-logo-text">品牌药企旗舰</span>
+              <img src="../assets/logo.png" alt="乐之药" class="brand-logo-img">
+              <span class="brand-logo-text">乐之药</span>
             </h1>
           </div>
           <div class="brand-nav-right">
@@ -148,11 +148,11 @@
           </div>
           <div class="footer-contact">
             <p>客服热线：400-123-4567</p>
-            <p>知识产权管理平台：dian.ysbang.cn</p>
+            <p>知识产权管理平台：dian.lezhiyao.cn</p>
           </div>
         </div>
         <div class="copyright">
-          <p>Copyright@2015-2024 乐之药dian.ysbang.cn版权所有</p>
+          <p>Copyright@2015-2024 乐之药dian.lezhiyao.cn版权所有</p>
         </div>
       </div>
     </footer>
