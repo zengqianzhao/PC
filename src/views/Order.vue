@@ -1,16 +1,10 @@
 <template>
   <div class="order-container">
 
-
     <!-- 订单主内容区 -->
     <main class="order-main">
       <div class="container">
-        <!-- 面包屑导航 -->
-        <div class="breadcrumb">
-          <a href="/" class="breadcrumb-link">商城首页</a>
-          <span class="breadcrumb-separator">></span>
-          <span class="breadcrumb-current">我的订单</span>
-        </div>
+
 
         <!-- 订单状态标签 -->
         <div class="order-tabs">
@@ -201,7 +195,7 @@ export default {
 body {
   font-family: 'Microsoft YaHei', Arial, sans-serif;
   color: #333;
-  background-color: #f5f5f5;
+  background-color: #f5f7fa;
 }
 
 .container {
@@ -210,11 +204,24 @@ body {
   padding: 0 20px;
 }
 
+/* 页面容器 */
+.order-container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
 
+
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+  padding: 20px 0;
+}
 
 /* 主内容区样式 */
 .order-main {
-  padding: 20px 0;
+  padding: 24px 0;
   min-height: 600px;
 }
 
@@ -223,7 +230,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 14px;
   color: #666;
 }
@@ -231,10 +238,11 @@ body {
 .breadcrumb-link {
   color: #666;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .breadcrumb-link:hover {
-  color: #ff6b35;
+  color: #1890ff;
 }
 
 .breadcrumb-separator {
@@ -249,75 +257,81 @@ body {
 /* 订单标签 */
 .order-tabs {
   display: flex;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .tab-item {
   flex: 1;
   text-align: center;
-  padding: 12px;
+  padding: 14px 12px;
   font-size: 14px;
   color: #666;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .tab-item:hover {
-  color: #ff6b35;
+  color: #1890ff;
+  background-color: #e6f7ff;
 }
 
 .tab-item.active {
-  background-color: #ff6b35;
-  color: #fff;
+  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  color: white;
   font-weight: bold;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
 }
 
 /* 筛选区域 */
 .order-filter {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
 }
 
 .filter-row {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .filter-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .search-input, .select-input, .date-input {
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 10px 16px;
+  border: 2px solid #e8e8e8;
+  border-radius: 8px;
   font-size: 14px;
   outline: none;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
 }
 
 .search-input:focus, .select-input:focus, .date-input:focus {
-  border-color: #ff6b35;
+  border-color: #1890ff;
+  box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.1);
 }
 
 .search-input {
-  width: 200px;
+  width: 240px;
 }
 
 .select-input {
-  width: 120px;
+  width: 150px;
 }
 
 .date-input {
@@ -327,6 +341,7 @@ body {
 .filter-label {
   font-size: 14px;
   color: #666;
+  font-weight: 500;
 }
 
 .date-separator {
@@ -334,75 +349,85 @@ body {
 }
 
 .more-btn, .search-btn, .export-btn {
-  padding: 8px 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 8px;
   font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
 }
 
 .more-btn {
-  background-color: #fff;
+  background-color: white;
   color: #666;
+  border: 1px solid #e8e8e8;
 }
 
 .more-btn:hover {
-  border-color: #ff6b35;
-  color: #ff6b35;
+  border-color: #1890ff;
+  color: #1890ff;
+  background-color: #e6f7ff;
+  transform: translateY(-2px);
 }
 
 .search-btn {
-  background-color: #ff6b35;
-  color: #fff;
-  border-color: #ff6b35;
+  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
 }
 
 .search-btn:hover {
-  background-color: #ff5722;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(24, 144, 255, 0.4);
 }
 
 .export-btn {
-  background-color: #4caf50;
-  color: #fff;
-  border-color: #4caf50;
+  background-color: #52c41a;
+  color: white;
+  box-shadow: 0 4px 12px rgba(82, 196, 26, 0.3);
 }
 
 .export-btn:hover {
-  background-color: #45a049;
+  background-color: #47c307;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(82, 196, 26, 0.4);
 }
 
 /* 订单列表 */
 .order-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .order-item {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease;
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
 }
 
 .order-item:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .order-header-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f5f5f5;
 }
 
 .order-time, .order-number {
   font-size: 14px;
   color: #666;
+  font-weight: 500;
 }
 
 .order-status {
@@ -413,22 +438,23 @@ body {
 
 .status-text {
   font-size: 14px;
-  color: #ff6b35;
+  color: #1890ff;
   font-weight: bold;
 }
 
 .status-tag {
   font-size: 12px;
   color: #fff;
-  background-color: #999;
-  padding: 2px 8px;
-  border-radius: 10px;
+  background-color: #1890ff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 500;
 }
 
 .order-content {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .order-shop {
@@ -438,7 +464,7 @@ body {
 }
 
 .shop-name {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: #333;
 }
@@ -449,46 +475,57 @@ body {
 }
 
 .contact-btn {
-  padding: 4px 12px;
+  padding: 6px 16px;
   font-size: 12px;
-  color: #ff6b35;
-  border: 1px solid #ff6b35;
-  border-radius: 4px;
-  background-color: #fff;
+  color: #1890ff;
+  border: 1px solid #1890ff;
+  border-radius: 6px;
+  background-color: white;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .contact-btn:hover {
-  background-color: #fff3e0;
+  background-color: #e6f7ff;
+  transform: translateY(-2px);
 }
 
 .order-products {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .product-item {
   display: flex;
   align-items: center;
-  padding: 10px;
-  background-color: #fafafa;
-  border-radius: 6px;
+  padding: 16px;
+  background-color: #f0f5ff;
+  border-radius: 8px;
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.product-item:hover {
+  background-color: #e6f7ff;
+  transform: translateY(0);
 }
 
 .product-info {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .product-image {
-  width: 80px;
-  height: 80px;
-  background-color: #f0f0f0;
-  border-radius: 4px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-image img {
@@ -500,26 +537,28 @@ body {
 .product-details {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
+  flex: 1;
 }
 
 .product-name {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
-  max-width: 400px;
+  max-width: 450px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-weight: 500;
 }
 
 .product-spec {
-  font-size: 12px;
+  font-size: 14px;
   color: #999;
 }
 
 .product-price {
-  font-size: 14px;
-  color: #ff6b35;
+  font-size: 16px;
+  color: #1890ff;
   font-weight: bold;
 }
 
@@ -527,61 +566,67 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 15px;
-  border-top: 1px solid #f0f0f0;
+  padding-top: 20px;
+  border-top: 2px solid #f5f5f5;
 }
 
 .summary-item {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 5px;
+  gap: 8px;
   margin-right: 30px;
 }
 
 .summary-label {
-  font-size: 12px;
+  font-size: 14px;
   color: #999;
+  font-weight: 500;
 }
 
 .summary-value {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   font-weight: bold;
 }
 
 .order-actions {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .action-btn {
-  padding: 8px 16px;
+  padding: 10px 20px;
   font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
 }
 
 .primary-btn {
-  background-color: #ff6b35;
-  color: #fff;
-  border-color: #ff6b35;
+  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
 }
 
 .primary-btn:hover {
-  background-color: #ff5722;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(24, 144, 255, 0.4);
 }
 
 .secondary-btn {
-  background-color: #fff;
+  background-color: white;
   color: #666;
+  border: 1px solid #e8e8e8;
 }
 
 .secondary-btn:hover {
-  color: #ff6b35;
-  border-color: #ff6b35;
+  color: #1890ff;
+  border-color: #1890ff;
+  background-color: #e6f7ff;
+  transform: translateY(-2px);
 }
 
 /* 页脚样式 - 高端大气版本 */

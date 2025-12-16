@@ -31,5 +31,6 @@ export default {
 #app {
   width: 100%;
   min-height: 100vh;
+  background-color: #ffffff; /* 设置白色背景 */
 }
 </style>

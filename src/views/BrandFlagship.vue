@@ -1,81 +1,5 @@
 <template>
   <div class="brand-flagship-container">
-    <!-- 促销活动区域 -->
-    <div class="health-container">
-      <div class="brand-promotions">
-        <div class="brand-coupons">
-          <div class="brand-coupon">
-            <span class="brand-coupon-title">有优惠券</span>
-          </div>
-          <div class="brand-coupon">
-            <span class="brand-coupon-title">支持货到付款</span>
-          </div>
-          <div class="brand-coupon">
-            <span class="brand-coupon-title">顺丰包邮</span>
-          </div>
-          <div class="brand-coupon">
-            <span class="brand-coupon-title">首单专享</span>
-          </div>
-          <div class="brand-coupon">
-            <span class="brand-coupon-title">康泽</span>
-          </div>
-          <div class="brand-coupon">
-            <span class="brand-coupon-title">齐乐</span>
-          </div>
-          <div class="brand-coupon">
-            <span class="brand-coupon-title">开鑫券</span>
-          </div>
-        </div>
-        
-        <!-- 配送方式 -->
-        <div class="brand-delivery">
-          <div class="brand-delivery-item">
-            <span class="brand-delivery-title">起配金额</span>
-            <div class="brand-delivery-options">
-              <span class="brand-delivery-option">0-300</span>
-              <span class="brand-delivery-option">300-500</span>
-              <span class="brand-delivery-option">500-1000</span>
-              <span class="brand-delivery-option">1000以上</span>
-            </div>
-          </div>
-          <div class="brand-delivery-item">
-            <span class="brand-delivery-title">经营类别</span>
-            <div class="brand-delivery-options">
-              <span class="brand-delivery-option">注射剂</span>
-              <span class="brand-delivery-option">西药</span>
-              <span class="brand-delivery-option">OTC药</span>
-              <span class="brand-delivery-option">处方药</span>
-              <span class="brand-delivery-option">中药饮片</span>
-              <span class="brand-delivery-option">中药饮片</span>
-              <span class="brand-delivery-option">中药饮片</span>
-              <span class="brand-delivery-option">中药饮片</span>
-              <span class="brand-delivery-option">中药饮片</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 配送承诺 -->
-        <div class="brand-delivery-promises">
-          <div class="brand-promise-item">
-            <span class="brand-promise-icon">🚚</span>
-            <span class="brand-promise-text">今日特价</span>
-          </div>
-          <div class="brand-promise-item">
-            <span class="brand-promise-icon">⚡</span>
-              <span class="brand-promise-text">药超惠推荐</span>
-            </div>
-            <div class="brand-promise-item">
-              <span class="brand-promise-icon">📦</span>
-              <span class="brand-promise-text">按评价从高到低</span>
-            </div>
-            <div class="brand-promise-item">
-              <span class="brand-promise-icon">📞</span>
-              <span class="brand-promise-text">按起配金额从低到高</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     <!-- 主要内容区域 -->
     <main class="brand-main">
       <!-- 品牌Banner -->
@@ -83,7 +7,82 @@
         <div class="health-container">
           <div class="brand-banner-content">
             <h2 class="brand-banner-title">品质保证 · 原厂直供</h2>
-            <p class="brand-banner-subtitle">精选优质品牌药企，为您提供放心药品</p>
+            <p class="brand-banner-subtitle">精选优质品牌药企，为您提供放心药品，设计高端大气</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 品质保证功能区域 -->
+      <section class="quality-guarantee-section">
+        <div class="health-container">
+          <!-- 促销活动区域 -->
+          <div class="brand-promotions">
+            <ul class="brand-coupons">
+              <li class="brand-coupon">
+                <span class="brand-coupon-title">有优惠券</span>
+              </li>
+              <li class="brand-coupon">
+                <span class="brand-coupon-title">支持货到付款</span>
+              </li>
+              <li class="brand-coupon">
+                <span class="brand-coupon-title">顺丰包邮</span>
+              </li>
+              <li class="brand-coupon">
+                <span class="brand-coupon-title">首单专享</span>
+              </li>
+              <li class="brand-coupon">
+                <span class="brand-coupon-title">康泽</span>
+              </li>
+              <li class="brand-coupon">
+                <span class="brand-coupon-title">齐乐</span>
+              </li>
+              <li class="brand-coupon">
+                <span class="brand-coupon-title">开鑫券</span>
+              </li>
+            </ul>
+            
+            <!-- 配送方式 -->
+            <div class="brand-delivery">
+              <div class="brand-delivery-item">
+                <span class="brand-delivery-title">起配金额</span>
+                <ul class="brand-delivery-options">
+                  <li class="brand-delivery-option">0-300</li>
+                  <li class="brand-delivery-option">300-500</li>
+                  <li class="brand-delivery-option">500-1000</li>
+                  <li class="brand-delivery-option">1000以上</li>
+                </ul>
+              </div>
+              <div class="brand-delivery-item">
+                <span class="brand-delivery-title">经营类别</span>
+                <ul class="brand-delivery-options">
+                  <li class="brand-delivery-option">注射剂</li>
+                  <li class="brand-delivery-option">西药</li>
+                  <li class="brand-delivery-option">OTC药</li>
+                  <li class="brand-delivery-option">处方药</li>
+                  <li class="brand-delivery-option">中药饮片</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- 配送承诺 -->
+            <ul class="brand-delivery-promises">
+              <li class="brand-promise-item">
+                <span class="brand-promise-icon">🚚</span>
+                <span class="brand-promise-text">今日特价</span>
+              </li>
+              <li class="brand-promise-item">
+                <span class="brand-promise-icon">⚡</span>
+                <span class="brand-promise-text">药超惠推荐</span>
+              </li>
+              <li class="brand-promise-item">
+                <span class="brand-promise-icon">📦</span>
+                <span class="brand-promise-text">按评价从高到低</span>
+              </li>
+              <li class="brand-promise-item">
+                <span class="brand-promise-icon">📞</span>
+                <span class="brand-promise-text">按起配金额从低到高</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -554,7 +553,7 @@ export default {
 /* 页面头部样式 */
 .brand-header {
   background: #ffffff;
-  border-bottom: 2px solid #ff8800;
+  border-bottom: 2px solid #ffffff;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -594,13 +593,13 @@ export default {
 }
 
 .brand-main-nav:hover {
-  color: #ff8800;
-  background: #fff3e0;
+  color: #000000;
+  background: #ffffff;
 }
 
 .brand-main-nav.active {
-  color: #ff8800;
-  background: #fff3e0;
+  color: #000000;
+  background: #ffffff;
   border-bottom: none;
 }
 
@@ -618,7 +617,7 @@ export default {
 .brand-logo-text {
   font-size: 18px;
   font-weight: 700;
-  color: #ff8800;
+  color: #000000;
   letter-spacing: 1px;
 }
 
@@ -651,8 +650,8 @@ export default {
 
 .brand-search-input:focus {
   background: #ffffff;
-  border-color: #ff8800;
-  box-shadow: 0 0 5px rgba(255, 136, 0, 0.3);
+  border-color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .brand-search-btn {
@@ -660,8 +659,8 @@ export default {
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
-  background: #ff8800;
-  border: none;
+  background: #ffffff;
+  border: 1px solid #000000;
   border-radius: 13px;
   width: 28px;
   height: 28px;
@@ -673,9 +672,9 @@ export default {
 }
 
 .brand-search-btn:hover {
-  background: #ff7700;
+  background: #ffffff;
   transform: translateY(-50%) translateY(-1px);
-  box-shadow: 0 3px 8px rgba(255, 136, 0, 0.3);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 .brand-search-icon {
@@ -716,10 +715,10 @@ export default {
 
 /* 促销活动区域样式 */
 .brand-promotions {
-  background: linear-gradient(135deg, #fff4e6 0%, #ffe8cc 100%);
+  background: #ffffff;
   padding: 15px 0;
-  border-top: 1px solid #ffe0b2;
-  border-bottom: 1px solid #ffe0b2;
+  border-top: 1px solid #b3d9ff;
+  border-bottom: 1px solid #b3d9ff;
 }
 
 .brand-coupons {
@@ -731,19 +730,19 @@ export default {
 
 .brand-coupon {
   background: #fff;
-  border: 1px solid #ffcc80;
+  border: 1px solid #99ccff;
   border-radius: 20px;
   padding: 6px 15px;
   font-size: 13px;
   font-weight: 500;
-  color: #ff8800;
+  color: #0055aa;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .brand-coupon:hover {
-  background: #ff8800;
+  background: #0055aa;
   color: #fff;
   transform: translateY(-1px);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -822,31 +821,42 @@ export default {
   font-size: 14px;
 }
 
+/* 品质保证功能区域样式 */
+.quality-guarantee-section {
+  background: #ffffff;
+  padding: 25px 0;
+  border-bottom: 1px solid #e6f2ff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
 /* 品牌Banner样式 */
 .brand-banner {
-  background: linear-gradient(135deg, #fff9f2 0%, #fff4e6 100%);
-  padding: 20px 0;
-  color: #ff8800;
+  background: linear-gradient(135deg, #e6f2ff 0%, #cce5ff 100%);
+  padding: 30px 0;
+  color: #0055aa;
   text-align: left;
-  border-bottom: 1px solid #ffe0b2;
+  border-bottom: 1px solid #b3d9ff;
+  box-shadow: 0 2px 10px rgba(0, 85, 170, 0.1);
 }
 
 .brand-banner-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 8px;
+  letter-spacing: -0.5px;
 }
 
 .brand-banner-subtitle {
   font-size: 14px;
-  color: #666;
+  color: #003366;
 }
 
 /* 品牌分类导航样式 */
 .brand-category-nav {
   background: #ffffff;
   padding: 15px 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #e6f2ff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
 .brand-category-list {
@@ -860,28 +870,31 @@ export default {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 16px;
-  background: #f5f5f5;
-  border-radius: 20px;
+  padding: 10px 20px;
+  background: #f5f7fa;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 13px;
   font-weight: 500;
-  color: #666;
+  color: #003366;
   white-space: nowrap;
+  border: 1px solid transparent;
 }
 
 .brand-category-item:hover {
-  background: #ffe8cc;
-  color: #ff8800;
+  background: #e6f2ff;
+  color: #0055aa;
   transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 85, 170, 0.1);
+  border-color: #b3d9ff;
 }
 
 .brand-category-item.active {
-  background: #ff8800;
+  background: #0055aa;
   color: #ffffff;
-  box-shadow: 0 2px 6px rgba(255, 136, 0, 0.3);
+  box-shadow: 0 3px 12px rgba(0, 85, 170, 0.4);
+  border-color: #0055aa;
 }
 
 .brand-category-icon {
@@ -890,57 +903,72 @@ export default {
 
 /* 品牌药企列表样式 */
 .brand-companies-section {
-  padding: 20px 0;
-  background: #ffffff;
+  padding: 30px 0;
+  background: #f8fafc;
 }
 
 .brand-section-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  color: #333;
-  margin-bottom: 15px;
+  color: #003366;
+  margin-bottom: 20px;
   text-align: left;
-  padding-left: 10px;
-  border-left: 3px solid #ff8800;
+  padding-left: 15px;
+  border-left: 4px solid #0055aa;
   position: relative;
+  letter-spacing: -0.3px;
 }
 
 .brand-companies-grid {
   display: flex;
-  gap: 15px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  background: #f8f8f8;
-  padding: 15px;
-  border-radius: 8px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  background: transparent;
 }
 
 .brand-company-card {
   background: #ffffff;
-  border-radius: 8px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
-  min-width: 300px;
-  border: 1px solid #e0e0e0;
+  min-width: auto;
+  width: 100%;
+  border: 1px solid #e6f2ff;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* 隐藏滚动条 */
+.brand-companies-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-companies-grid {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .brand-company-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 85, 170, 0.2);
+  border-color: #b3d9ff;
 }
 
 .brand-company-logo {
-  width: 100%;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   background: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #f0f0f0;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  flex-shrink: 0;
 }
 
 .brand-company-logo-img {
@@ -950,63 +978,71 @@ export default {
 }
 
 .brand-company-info {
-  padding: 12px;
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  padding: 0;
 }
 
 .brand-company-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4px;
+  width: 100%;
 }
 
 .brand-company-name {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
-  color: #333;
-  margin-bottom: 4px;
+  color: #003366;
+  margin-bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .brand-company-rating {
-  font-size: 12px;
-  color: #ff8800;
+  font-size: 14px;
+  color: #0055aa;
   font-weight: 600;
-  background: #fff8f0;
-  padding: 2px 6px;
-  border-radius: 10px;
+  background: #e6f2ff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .brand-company-desc {
-  font-size: 11px;
+  font-size: 14px;
   color: #666;
-  margin-bottom: 8px;
-  line-height: 1.3;
+  margin-bottom: 0;
+  line-height: 1.6;
   flex: 1;
+  font-weight: 400;
 }
 
 .brand-company-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  padding-top: 8px;
-  border-top: 1px dashed #eee;
+  gap: 15px;
+  padding-top: 12px;
+  border-top: 1px dashed #e6f2ff;
+  margin-top: auto;
 }
 
 .brand-company-stat {
   display: flex;
   align-items: center;
-  gap: 3px;
-  font-size: 11px;
-  color: #999;
-  background: #fafafa;
-  padding: 3px 6px;
-  border-radius: 4px;
+  gap: 6px;
+  font-size: 13px;
+  color: #003366;
+  background: #f0f7ff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6f2ff;
+  font-weight: 500;
 }
 
 .brand-stat-icon {
@@ -1030,14 +1066,16 @@ export default {
 
 .brand-view-more {
   font-size: 13px;
-  color: #ff8800;
+  color: #0055aa;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
 }
 
 .brand-view-more:hover {
-  color: #ff7700;
+  color: #003366;
   text-decoration: underline;
 }
 
@@ -1045,30 +1083,33 @@ export default {
 .brand-sort-options {
   display: flex;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding: 10px 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 2px solid #e6f2ff;
 }
 
 .brand-sort-option {
   font-size: 13px;
-  color: #666;
+  color: #003366;
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 8px 15px;
+  border-radius: 6px;
   transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
 
 .brand-sort-option:hover {
-  color: #ff8800;
-  background: #fff8f0;
+  color: #0055aa;
+  background: #e6f2ff;
+  border-color: #b3d9ff;
 }
 
 .brand-sort-option.active {
-  color: #ff8800;
-  background: #fff8f0;
+  color: #ffffff;
+  background: #0055aa;
   font-weight: 600;
-  border-bottom: 2px solid #ff8800;
+  border-bottom: 2px solid #003366;
+  border-color: #0055aa;
 }
 
 /* 药企信息 */
@@ -1136,17 +1177,17 @@ export default {
 
 .brand-product-card {
   background: #ffffff;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   position: relative;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #e6f2ff;
 }
 
 .brand-product-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 85, 170, 0.15);
 }
 
 .brand-product-image-container {
@@ -1174,13 +1215,13 @@ export default {
   position: absolute;
   top: 8px;
   left: 8px;
-  background: #ff8800;
+  background: #0055aa;
   color: #ffffff;
-  padding: 2px 6px;
-  border-radius: 10px;
+  padding: 3px 8px;
+  border-radius: 12px;
   font-size: 10px;
   font-weight: 600;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 85, 170, 0.3);
 }
 
 .brand-product-badge.hot {
@@ -1215,13 +1256,13 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .brand-product-current-price {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  color: #ff0000;
+  color: #0055aa;
 }
 
 .brand-product-original-price {
@@ -1297,11 +1338,11 @@ export default {
 
 .brand-add-to-cart {
   width: 100%;
-  background: #ff8800;
+  background: #0055aa;
   color: #ffffff;
   border: none;
-  padding: 10px;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 8px;
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -1310,12 +1351,13 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 4px;
+  box-shadow: 0 2px 8px rgba(0, 85, 170, 0.2);
 }
 
 .brand-add-to-cart:hover {
-  background: #ff7700;
-  transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(255, 136, 0, 0.3);
+  background: #003366;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 85, 170, 0.3);
 }
 
 /* 页脚样式 */
@@ -1373,11 +1415,12 @@ export default {
   width: 350px;
   height: 100vh;
   background: #ffffff;
-  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
   z-index: 1000;
   transition: right 0.3s ease;
   display: flex;
   flex-direction: column;
+  border-left: 1px solid #e6f2ff;
 }
 
 .health-cart-sidebar.open {
@@ -1389,7 +1432,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 2px solid #e6f2ff;
+  background: #f8fafc;
 }
 
 .health-cart-header h3 {
@@ -1513,9 +1557,9 @@ export default {
 }
 
 .health-cart-footer {
-  padding: 15px;
-  border-top: 1px solid #f0f0f0;
-  background: #fafafa;
+  padding: 20px;
+  border-top: 2px solid #e6f2ff;
+  background: #f8fafc;
 }
 
 .health-cart-total {
@@ -1538,21 +1582,22 @@ export default {
 
 .health-cart-checkout {
   width: 100%;
-  background: #ff8800;
+  background: #0055aa;
   color: #ffffff;
   border: none;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 14px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 85, 170, 0.2);
 }
 
 .health-cart-checkout:hover {
-  background: #ff7700;
-  transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(255, 136, 0, 0.3);
+  background: #003366;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 85, 170, 0.3);
 }
 
 .health-overlay {

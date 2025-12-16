@@ -42,6 +42,55 @@ const routes = [
       keepAlive: false
     }
   },
+  // 我的账单页面
+  {
+    path: '/loan',
+    name: 'Loan',
+    component: () => import('../views/Loan.vue'),
+    meta: {
+      title: '我的账单 - 乐之药App',
+      keepAlive: false
+    }
+  },
+  // 检验报告页面
+  {
+    path: '/inspection-report',
+    name: 'InspectionReport',
+    component: () => import('../views/InspectionReport.vue'),
+    meta: {
+      title: '检验报告 - 乐之药App',
+      keepAlive: false
+    }
+  },
+  // 帮助中心页面
+  {
+    path: '/help-center',
+    name: 'HelpCenter',
+    component: () => import('../views/HelpCenter.vue'),
+    meta: {
+      title: '帮助中心 - 乐之药App',
+      keepAlive: false
+    }
+  },
+  // 药店页面
+  {
+    path: '/pharmacy',
+    name: 'Pharmacy',
+    component: () => import('../views/Pharmacy.vue'),
+    meta: {
+      title: '药店 - 乐之药App',
+      keepAlive: true
+    }
+  },
+  // 商务中心页面
+  {
+    path: '/business-center',
+    name: 'BusinessCenter',
+    component: () => import('../views/BusinessCenter.vue'),
+    meta: {
+      title: '商务中心 - 乐之药App'
+    }
+  },
   // 重定向到登录页
   {
     path: '/',
